@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haritage Travel</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- DATE PICKER -->
+    <link rel="stylesheet" href="css/datepicker.css">
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- REMIXICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <div class="container">
+                <div class="topbar__content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo2.png" alt="">
+                        </a>
+                    </div>
+
+                    <input type="checkbox" id="nav__check" hidden>
+
+                    <nav>
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/logo2.png" alt="">
+                            </a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#" class="active"><i class="fa-solid fa-hotel"></i>Жилье</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-plane-departure"></i>Авиабилеты</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-car"></i>Аренда Машин</a>
+                            </li>
+                        </ul>
+
+                        <div class="nav__btn">
+                            <a href="#">
+                                <button>Зарегистрироваться</button>
+                            </a>
+                            <a href="#">
+                                <button>Войти в аккаунт</button>
+                            </a>
+                        </div>
+                    </nav>
+
+                    <div class="nav__switch">
+                        <label for="nav__check" class="hamburger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </label>
+
+                        <div class="paste-button">
+                            <button class="dropdown-button">RU &nbsp; ▼</button>
+                            <div class="dropdown-content">
+                                <a id="top" href="#">RU</a>
+                                <a id="middle" href="#">UZ</a>
+                                <a id="bottom" href="#">EN</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="book results__book">
+                <!-- FORM -->
+                <form class="book__form">
+                    <div class="book__box">
+                        <!-- PLACE -->
+                        <div class="book__block">
+                            <label for="city"><i class="fa-solid fa-hotel"></i> Локация</label>
+                            <select id="city">
+                                <option>Куда вы хотите поехать?</option>
+                                <option>Ташкент</option>
+                                <option>Самарканд</option>
+                                <option>Бухара</option>
+                            </select>
+                        </div>
+
+                        <!-- DATE -->
+                        <div class="book__block">
+                            <label for="date"><i class="fa-solid fa-calendar-days"></i> Время отдыха</label>
+                            <input name='range' id='cal' />
+                        </div>
+
+                        <!-- PEOPLES -->
+                        <div class="book__block">
+                            <label for="person"><i class="fa-solid fa-user"></i> Количество людей</label>
+                            <select id="person">
+                                <option>2 взрослых · 0 детей · 1 номер</option>
+                                <option>Ташкент</option>
+                                <option>Самарканд</option>
+                                <option>Бухара</option>
+                            </select>
+                        </div>
+
+                        <a href="#">
+                            <button>Найти</button>
+                        </a>
+                    </div>
+                </form>
+                <!-- FORM -->
+            </section>
+
+            <section class="results">
+                <div class="results__title">
+                    <h1>Ташкент: найдено 70 вариантов</h1>
+                </div>
+
+                <div>
+                    <h1>Ваш бюджет (за ночь)</h1>
+                    <div class="filter">
+                        <div class="price-range-slider">
+  
+                            <p class="range-value">
+                              <input type="text" id="amount" readonly>
+                            </p>
+                            <div id="slider-range" class="range-bar"></div>
+                            
+                          </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer__content">
+                <div>
+                    <img src="img/logo-footer.png" alt="">
+                </div>
+
+                <div>
+                    <h1>Отели Узбекистана</h1>
+                    <div class="footer__line"></div>
+
+                    <ul>
+                        <li><a href="#">Г. Ташкент</a></li>
+                        <li><a href="#">О.Ташкент</a></li>
+                        <li><a href="#">Бухара</a></li>
+                        <li><a href="#">Самарканд</a></li>
+                        <li><a href="#">Хива</a></li>
+                        <li><a href="#">Хоразем</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1>Униклни отелей</h1>
+                    <div class="footer__line"></div>
+
+                    <ul>
+                        <li><a href="#">Reikartz Amirun </a></li>
+                        <li><a href="#">Hatar Rijensi</a></li>
+                        <li><a href="#">Simma Hotel</a></li>
+                        <li><a href="#">Daniel Hill 4 </a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1>Популярные отели</h1>
+                    <div class="footer__line"></div>
+
+                    <ul>
+                        <li><a href="#">Г. Ташкент</a></li>
+                        <li><a href="#">О.Ташкент</a></li>
+                        <li><a href="#">Бухара</a></li>
+                        <li><a href="#">Самарканд</a></li>
+                        <li><a href="#">Хива</a></li>
+                        <li><a href="#">Хоразем</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- JQUERY -->
+    <script src="libs/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+
+    <!-- MOMENT JS -->
+    <script src="libs/moment.js"></script>
+
+    <!-- DATE PICKER -->
+    <script src="libs/datepicker.js"></script>
+
+    <!-- SWIPER -->
+    <script src="libs/swiper-bundle.min.js"></script>
+
+    <!-- FONT AWESOME ICON -->
+    <script src="libs/fontawesome.js"></script>
+
+    <!-- MAIN CUSTOM JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

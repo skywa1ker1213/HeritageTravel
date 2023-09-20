@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haritage Travel</title>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- DATE PICKER -->
+    <link rel="stylesheet" href="css/datepicker.css">
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- REMIXICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <div class="container">
+                <div class="topbar__content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo2.png" alt="">
+                        </a>
+                    </div>
+
+                    <input type="checkbox" id="nav__check" hidden>
+
+                    <nav>
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/logo2.png" alt="">
+                            </a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#" class="active"><i class="fa-solid fa-hotel"></i>Жилье</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-plane-departure"></i>Авиабилеты</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-car"></i>Аренда Машин</a>
+                            </li>
+                        </ul>
+
+                        <div class="nav__btn">
+                            <a href="#">
+                                <button>Зарегистрироваться</button>
+                            </a>
+                            <a href="#">
+                                <button>Войти в аккаунт</button>
+                            </a>
+                        </div>
+                    </nav>
+
+                    <div class="nav__switch">
+                        <label for="nav__check" class="hamburger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </label>
+
+                        <div class="paste-button">
+                            <button class="dropdown-button">RU &nbsp; ▼</button>
+                            <div class="dropdown-content">
+                                <a id="top" href="#">RU</a>
+                                <a id="middle" href="#">UZ</a>
+                                <a id="bottom" href="#">EN</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="head-start">
+                <div class="head__content">
+                    <h2>-Ищите спецпредложения на отели, дома и другие варианты.</h2>
+
+                    <h1>Найдите жилье для новой поездки</h1>
+    
+                    <a href="results.html">
+                        <button class="place__register-btn">Зарегистрировать свой объект</button>
+                    </a>
+                </div>
+            </section>
+
+            <section class="book">
+                <!-- FORM -->
+                <form class="book__form">
+                    <div class="book__box">
+                        <!-- PLACE -->
+                        <div class="book__block">
+                            <label for="city"><i class="fa-solid fa-hotel"></i> Локация</label>
+                            <select id="city">
+                                <option>Куда вы хотите поехать?</option>
+                                <option>Ташкент</option>
+                                <option>Самарканд</option>
+                                <option>Бухара</option>
+                            </select>
+                        </div>
+
+                        <!-- DATE -->
+                        <div class="book__block">
+                            <label for="date"><i class="fa-solid fa-calendar-days"></i> Время отдыха</label>
+                            <input name='range' id='cal' />
+                        </div>
+
+                        <!-- PEOPLES -->
+                        <div class="book__block">
+                            <label for="person"><i class="fa-solid fa-user"></i> Количество людей</label>
+                            <select id="person">
+                                <option>2 взрослых · 0 детей · 1 номер</option>
+                                <option>Ташкент</option>
+                                <option>Самарканд</option>
+                                <option>Бухара</option>
+                            </select>
+                        </div>
+
+                        <a href="#">
+                            <button>Найти</button>
+                        </a>
+                    </div>
+                </form>
+                <!-- FORM -->
+            </section>
+
+            <section class="popular-hotels">
+                <h1>Популярные направление</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur. Erat vestibulum dictum aenean </p>
+
+                <div class="swiper">
+                    <div class="slide-container">
+                        <div class="card-wrapper swiper-wrapper">
+                            <!-- CARD 1 -->
+                            <div class="card swiper-slide">
+                                <a href="#">
+                                    <div class="image-box">
+                                        <h2>Ташкент</h2>
+                                        <img src="img/tashkent-img.png" alt="" />
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- CARD 2 -->
+                            <div class="card swiper-slide">
+                                <a href="#">
+                                    <div class="image-box">
+                                        <h2>Самарканд</h2>
+                                        <img src="img/samarkand-img.png" alt="" />
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- CARD 3 -->
+                            <div class="card swiper-slide">
+                                <a href="#">
+                                    <div class="image-box">
+                                        <h2>Бухара</h2>
+                                        <img src="img/bukhara-img.png" alt="" />
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- CARD 4 -->
+                            <div class="card swiper-slide">
+                                <a href="#">
+                                    <div class="image-box">
+                                        <h2>Ташкент</h2>
+                                        <img src="img/tashkent-img.png" alt="" />
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- CARD 5 -->
+                            <div class="card swiper-slide">
+                                <a href="#">
+                                    <div class="image-box">
+                                        <h2>Самарканд</h2>
+                                        <img src="img/samarkand-img.png" alt="" />
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- CARD 6 -->
+                            <div class="card swiper-slide">
+                                <a href="#">
+                                    <div class="image-box">
+                                        <h2>Бухара</h2>
+                                        <img src="img/bukhara-img.png" alt="" />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <section class="cities">
+                <div class="cities__title">
+                    <h1>Узбекистан — Все отели</h1>
+                    <p>В этих популярных местах вы точно найдете что-то для себя.</p>
+                </div>
+
+                <div class="cities__box">
+                    <a href="#">
+                        <div class="cities__card">
+                            <div class="cities__img">
+                                <img src="img/tashkent-city.png" alt="">
+                            </div>
+
+                            <div class="cities__info">
+                                <h5>Ташкент</h5>
+                                <p>110 вариантов</p>
+                                <p>Размещения</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="cities__card">
+                            <div class="cities__img">
+                                <img src="img/samarkand-city.png" alt="">
+                            </div>
+
+                            <div class="cities__info">
+                                <h5>Самарканд</h5>
+                                <p>110 вариантов</p>
+                                <p>Размещения</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="cities__card">
+                            <div class="cities__img">
+                                <img src="img/bukhara-city.png" alt="">
+                            </div>
+
+                            <div class="cities__info">
+                                <h5>Бухара</h5>
+                                <p>110 вариантов</p>
+                                <p>Размещения</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="cities__card">
+                            <div class="cities__img">
+                                <img src="img/horazm-city.png" alt="">
+                            </div>
+
+                            <div class="cities__info">
+                                <h5>Хорезм</h5>
+                                <p>110 вариантов</p>
+                                <p>Размещения</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="recommendation">
+                <div class="recommendation__title">
+                    <h1>Выберите уникальные отели</h1>
+
+                    <p>У нас есть всё: от замков и вилл до плавучих отелей и иглу</p>
+                </div>
+
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <ul class="carousel">
+                        <li class="recommendation__card">
+                            <div class="img"><img src="img/rec-img.png" alt="img" draggable="false"></div>
+
+                            <div class="recommendation__info">
+                                <h2>Reikartz Amirun Ташкент</h2>
+                                <div>
+                                    <span>Рейтинг: 4,7 </span>
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+
+                                    <p><i class="fa-solid fa-location-dot"></i> ул. Абдуллы Каххара, 150А, Яккасарайский
+                                        район</p>
+
+                                    <a href="#">
+                                        <button>Подробнее</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="recommendation__card">
+                            <div class="img"><img src="img/rec-img.png" alt="img" draggable="false"></div>
+
+                            <div class="recommendation__info">
+                                <h2>Reikartz Amirun Ташкент</h2>
+                                <div>
+                                    <span>Рейтинг: 4,7 </span>
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+
+                                    <p><i class="fa-solid fa-location-dot"></i> ул. Абдуллы Каххара, 150А, Яккасарайский
+                                        район</p>
+
+                                    <a href="#">
+                                        <button>Подробнее</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="recommendation__card">
+                            <div class="img"><img src="img/rec-img.png" alt="img" draggable="false"></div>
+
+                            <div class="recommendation__info">
+                                <h2>Reikartz Amirun Ташкент</h2>
+                                <div>
+                                    <span>Рейтинг: 4,7 </span>
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+
+                                    <p><i class="fa-solid fa-location-dot"></i> ул. Абдуллы Каххара, 150А, Яккасарайский
+                                        район</p>
+
+                                    <a href="#">
+                                        <button>Подробнее</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="recommendation__card">
+                            <div class="img"><img src="img/rec-img.png" alt="img" draggable="false"></div>
+
+                            <div class="recommendation__info">
+                                <h2>Reikartz Amirun Ташкент</h2>
+                                <div>
+                                    <span>Рейтинг: 4,7 </span>
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+
+                                    <p><i class="fa-solid fa-location-dot"></i> ул. Абдуллы Каххара, 150А, Яккасарайский
+                                        район</p>
+
+                                    <a href="#">
+                                        <button>Подробнее</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="recommendation__card">
+                            <div class="img"><img src="img/rec-img.png" alt="img" draggable="false"></div>
+
+                            <div class="recommendation__info">
+                                <h2>Reikartz Amirun Ташкент</h2>
+                                <div>
+                                    <span>Рейтинг: 4,7 </span>
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+
+                                    <p><i class="fa-solid fa-location-dot"></i> ул. Абдуллы Каххара, 150А, Яккасарайский
+                                        район</p>
+
+                                    <a href="#">
+                                        <button>Подробнее</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="recommendation__card">
+                            <div class="img"><img src="img/rec-img.png" alt="img" draggable="false"></div>
+
+                            <div class="recommendation__info">
+                                <h2>Reikartz Amirun Ташкент</h2>
+                                <div>
+                                    <span>Рейтинг: 4,7 </span>
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+
+                                    <p><i class="fa-solid fa-location-dot"></i> ул. Абдуллы Каххара, 150А, Яккасарайский
+                                        район</p>
+
+                                    <a href="#">
+                                        <button>Подробнее</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
+            </section>
+
+            <section class="contacts">
+                <h1 class="contacts__title">Наши контакты</h1>
+
+                <div class="contacts__content">
+                    <div class="contacts__block">
+                        <h1>Связаться с нами</h1>
+                        <p>Не стесняйтесь, напишите нам строчку ниже</p>
+
+                        <form>
+                            <label for="name">Ф.И.О</label>
+                            <input type="text" id="name">
+
+                            <label for="phone">Номер телефон</label>
+                            <input type="number" id="phone">
+
+                            <label for="text-area">Собшения</label>
+                            <textarea id="text-area"></textarea>
+                        </form>
+                    </div>
+
+                    <div class="contacts__box-parent">
+                        <div class="contacts__box">
+                            <h1>Наши данные</h1>
+
+                            <div>
+                                <div class="contacts__info">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>Toshkent, Yangiyul Gulbahor</p>
+                                </div>
+
+                                <div class="contacts__info">
+                                    <i class="fa-solid fa-headset"></i>
+                                    <div>
+                                        <a href="#"><p>+998 (90) 121-65-85</p></a>
+                                        <a href="#"><p>+998 (90) 121-65-85</p></a>
+                                    </div>
+                                </div>
+
+                                <div class="contacts__info">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <p>loremipsumgmail@.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer__content">
+                <div>
+                    <img src="img/logo-footer.png" alt="">
+                </div>
+
+                <div>
+                    <h1>Отели Узбекистана</h1>
+                    <div class="footer__line"></div>
+
+                    <ul>
+                        <li><a href="#">Г. Ташкент</a></li>
+                        <li><a href="#">О.Ташкент</a></li>
+                        <li><a href="#">Бухара</a></li>
+                        <li><a href="#">Самарканд</a></li>
+                        <li><a href="#">Хива</a></li>
+                        <li><a href="#">Хоразем</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1>Униклни отелей</h1>
+                    <div class="footer__line"></div>
+
+                    <ul>
+                        <li><a href="#">Reikartz Amirun </a></li>
+                        <li><a href="#">Hatar Rijensi</a></li>
+                        <li><a href="#">Simma Hotel</a></li>
+                        <li><a href="#">Daniel Hill 4 </a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1>Популярные отели</h1>
+                    <div class="footer__line"></div>
+
+                    <ul>
+                        <li><a href="#">Г. Ташкент</a></li>
+                        <li><a href="#">О.Ташкент</a></li>
+                        <li><a href="#">Бухара</a></li>
+                        <li><a href="#">Самарканд</a></li>
+                        <li><a href="#">Хива</a></li>
+                        <li><a href="#">Хоразем</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- JQUERY -->
+    <script src="libs/jquery.js"></script>
+
+    <!-- MOMENT JS -->
+    <script src="libs/moment.js"></script>
+
+    <!-- DATE PICKER -->
+    <script src="libs/datepicker.js"></script>
+
+    <!-- SWIPER -->
+    <script src="libs/swiper-bundle.min.js"></script>
+
+    <!-- FONT AWESOME ICON -->
+    <script src="libs/fontawesome.js"></script>
+
+    <!-- MAIN CUSTOM JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
